@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Nov 17 16:58:20 IST 2021</td>
+<td>Started on:</td><td>Wed Nov 17 18:40:18 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>24 seconds (24771 ms)</td>
+<tr><td>Total time:</td><td>19 seconds (19172 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,18 +67,87 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tms.tests.CourseSoftBookingsPageTest.AddnewCourseSoftBookingsRecordTest()'><b>AddnewCourseSoftBookingsRecordTest</b><br>Test class: com.tms.tests.CourseSoftBookingsPageTest<br>Test method: Verify button functionality<br>Parameters: {FeesPaid=, Email=, Computer Navigation Skill=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=, Remarks=, Postalcode=, Street=, confirmpassword=, Name2=Ping  Yang, Threshold=, Contact Number=67631689, Date Of Birth=, Company Contact Person=, Meal Restrictions Type=, testname=AddnewCourseSoftBookingsRecordTest, execute=yes, Experience=, submenu=Soft Bookings, newpassword1=, name=, Block=, name1=, Building=, Description=, phonenumber=, EnterText=, Course Brochure Determined=, Company Contact Person Number=, Deadline Date=, browser=chrome, skill=, Mobile No=, Email1=pingyang@mailinator.com, Nric=S5753402H, Domain Area of Practice=, Room=, Billing Email=, email=, Age=, Notes=Testing test, Floor=, Maxintakesize=, menuname=Course Runs, Coursecode=, Company Contact Person Email=, Coursevacdesc=, Scheduleinformation=, Company SME=, TPGateway=, Billing Zip=, Minintakesize=, Payment Amount=, oldpassword1=, Company Name=, coursecode=, Meal Restrictions=, username=superadmin@mail.com, Scheduleinfo=}</td>
-<td></td>
-<td>8</td>
-<td>com.tms.tests.CourseSoftBookingsPageTest@73a1e9a9</td></tr>
+<td title='com.tms.tests.CourseSoftBookingsPageTest.ClickonEnrolStudentfromListdots()'><b>ClickonEnrolStudentfromListdots</b><br>Test class: com.tms.tests.CourseSoftBookingsPageTest<br>Test method: Verify button functionality<br>Parameters: {FeesPaid=, Email=testing1@mailinator.com, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=12 Mark Street, Remarks=Testing Automation, Postalcode=, Street=, confirmpassword=, Company uen=Add44342, Name2=Yang Ping, Threshold=, Contact Number=25232526, Date Of Birth=1985-10-07, Company Contact Person=Tester1, Meal Restrictions Type=Vegan, testname=ClickonEnrolStudentfromListdots, execute=yes, Experience=, submenu=Soft Bookings, newpassword1=, name=, Block=, name1=, Building=, Description=, phonenumber=, EnterText=, Company Contact Person Number=25252523, Deadline Date=, browser=chrome, skill=, Mobile No=98985235, Email1=yangping@mailinator.com, Nric=S5753402B, Domain Area of Practice=, Room=, Billing Email=companybill@mailinator.com, email=, Age=30, Notes=tester notes, Floor=, Maxintakesize=, menuname=Course Runs, Coursecode=, Company Contact Person Email=tester1@mailinator.com, Coursevacdesc=, Scheduleinformation=, Company SME=, TPGateway=, Billing Zip=652523, Minintakesize=, Payment Amount=598, oldpassword1=, Company Name=Alpha Pvt Ltd, coursecode=, username=superadmin@mail.com, Scheduleinfo=}</td>
+<td><div><pre>org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.0.0-beta-3&apos;, revision: &apos;5d108f9a67&apos;
+System info: host: &apos;LAPTOP-PVF3C24O&apos;, ip: &apos;192.168.5.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2a379adb3d17603c7255145cebc48a18, clearElement {id=e7a8fb30-6d57-4877-8f4d-54b343e68a84}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\2STALL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50925}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50925/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (2a379adb3d17603c7255145cebc48a18)] -&gt; id: company_sme]
+Session ID: 2a379adb3d17603c7255145cebc48a18
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:198)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:237)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
+	at com.tms.pages.BasePage.clear(BasePage.java:29)
+	at com.tms.pages.StudentEnrollmentPage.EnterdetailIncompanysme(StudentEnrollmentPage.java:213)
+	at com.tms.tests.CourseSoftBookingsPageTest.ClickonEnrolStudentfromListdots(CourseSoftBookingsPageTest.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace890503829", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace890503829'><pre>org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;4.0.0-beta-3&apos;, revision: &apos;5d108f9a67&apos;
+System info: host: &apos;LAPTOP-PVF3C24O&apos;, ip: &apos;192.168.5.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2a379adb3d17603c7255145cebc48a18, clearElement {id=e7a8fb30-6d57-4877-8f4d-54b343e68a84}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\2STALL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50925}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50925/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (2a379adb3d17603c7255145cebc48a18)] -&gt; id: company_sme]
+Session ID: 2a379adb3d17603c7255145cebc48a18
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:198)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:237)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
+	at com.tms.pages.BasePage.clear(BasePage.java:29)
+	at com.tms.pages.StudentEnrollmentPage.EnterdetailIncompanysme(StudentEnrollmentPage.java:213)
+	at com.tms.tests.CourseSoftBookingsPageTest.ClickonEnrolStudentfromListdots(CourseSoftBookingsPageTest.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>7</td>
+<td>com.tms.tests.CourseSoftBookingsPageTest@7b98f307</td></tr>
 </table><p>
 </body>
 </html>

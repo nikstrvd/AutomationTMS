@@ -11,8 +11,8 @@
       <class name="com.tms.tests.CourseSoftBookingsPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="AddnewCourseSoftBookingsRecordTest" invocation-numbers="0"/>
           <include name="setUp"/>
+          <include name="ClickonEnrolStudentfromListdots" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.tms.tests.CourseSoftBookingsPageTest -->
     </classes>
