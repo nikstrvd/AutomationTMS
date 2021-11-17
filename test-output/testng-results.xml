@@ -2,23 +2,23 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-17T15:46:28 IST" name="Suite" finished-at="2021-11-17T15:47:03 IST" duration-ms="34592">
+  <suite started-at="2021-11-17T16:58:20 IST" name="Suite" finished-at="2021-11-17T16:58:45 IST" duration-ms="24771">
     <groups>
     </groups>
-    <test started-at="2021-11-17T15:46:28 IST" name="Test" finished-at="2021-11-17T15:47:03 IST" duration-ms="34592">
+    <test started-at="2021-11-17T16:58:20 IST" name="Test" finished-at="2021-11-17T16:58:45 IST" duration-ms="24771">
       <class name="com.tms.tests.CourseSoftBookingsPageTest">
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tms.tests.CourseSoftBookingsPageTest@411f53a0]" started-at="2021-11-17T15:46:30 IST" name="setUp" finished-at="2021-11-17T15:46:50 IST" duration-ms="20252" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tms.tests.CourseSoftBookingsPageTest@73a1e9a9]" started-at="2021-11-17T16:58:22 IST" name="setUp" finished-at="2021-11-17T16:58:36 IST" duration-ms="14464" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@377c68c6]]>
+                <![CDATA[[Ljava.lang.Object;@62315f22]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AddnewCourseSoftBookingsRecordTest(java.util.Map)[pri:0, instance:com.tms.tests.CourseSoftBookingsPageTest@411f53a0]" started-at="2021-11-17T15:46:50 IST" name="AddnewCourseSoftBookingsRecordTest" description="Verify button functionality" data-provider="getData" finished-at="2021-11-17T15:47:02 IST" duration-ms="11986" status="PASS">
+        <test-method signature="AddnewCourseSoftBookingsRecordTest(java.util.Map)[pri:0, instance:com.tms.tests.CourseSoftBookingsPageTest@73a1e9a9]" started-at="2021-11-17T16:58:36 IST" name="AddnewCourseSoftBookingsRecordTest" description="Verify button functionality" data-provider="getData" finished-at="2021-11-17T16:58:44 IST" duration-ms="8204" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddnewCourseSoftBookingsRecordTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tms.tests.CourseSoftBookingsPageTest@411f53a0]" started-at="2021-11-17T15:47:02 IST" name="tearDown" finished-at="2021-11-17T15:47:03 IST" duration-ms="381" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tms.tests.CourseSoftBookingsPageTest@73a1e9a9]" started-at="2021-11-17T16:58:44 IST" name="tearDown" finished-at="2021-11-17T16:58:45 IST" duration-ms="253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
