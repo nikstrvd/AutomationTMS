@@ -8,13 +8,13 @@
   </listeners>
   <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="com.tms.tests.WaitingListPageTest">
+      <class name="com.tms.tests.StaffPageTest">
         <methods>
           <include name="tearDown"/>
+          <include name="AddnewRecordTest" invocation-numbers="2 1"/>
           <include name="setUp"/>
-          <include name="EditWaitingListRecordTest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.tms.tests.WaitingListPageTest -->
+      </class> <!-- com.tms.tests.StaffPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

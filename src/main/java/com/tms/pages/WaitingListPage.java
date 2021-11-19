@@ -22,8 +22,9 @@ public class WaitingListPage extends BasePage {
 	private final By Contactnumber1 = By.xpath("//input[@name='contact_number']");
 	private final By Email1 = By.xpath("//input[@name='email']");
 	private final By Nric1 = By.xpath("//input[@name='nric']");
-	private final By Status1 = By.xpath("//select[@name='students[0][status]']");
+	private final By Status1 = By.xpath("//select[@name='status']");
 	private final By Notes = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[7]/div[1]/textarea[1]");
+	private final By Notes1 = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/h4header-title[1]/div[1]/div[6]/div[1]/textarea[1]");
 	
 	
 	public void clickonListdotsButton()
@@ -73,6 +74,13 @@ public WaitingListPage EnterdetailInNotes(String notes)
 {
 	clear(Notes, notes, WaitStrategy.PRESENSE, "notes Textbox field");
 	sendKeys(Notes, notes, WaitStrategy.PRESENSE, "notes Textbox field");
+	return this;
+}
+
+public WaitingListPage EnterdetailInNotes1(String notes1)
+{
+	clear(Notes1, notes1, WaitStrategy.PRESENSE, "notes Textbox field");
+	sendKeys(Notes1, notes1, WaitStrategy.PRESENSE, "notes Textbox field");
 	return this;
 }
 

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.tms.tests.WaitingListPageTest" class="method navigator-link" hash-for-method="EditWaitingListRecordTest({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...)">EditWaitingListRecordTest({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.tms.tests.VenuePageTest" class="method navigator-link" hash-for-method="AddnewVenueRecordTest({FeesPaid=, Email=, Unit=August Unit, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password...)">AddnewVenueRecordTest({FeesPaid=, Email=, Unit=August Unit, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,62 +119,24 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.tms.tests.WaitingListPageTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.tms.tests.VenuePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="EditWaitingListRecordTest({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...)">
-                  </a> <!-- EditWaitingListRecordTest({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...) -->
-                  <span class="method-name">EditWaitingListRecordTest</span>
-                  <span class="parameters">({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=, Remarks=, Postalcode=, Street=, confirmpassword=, Company uen=, Name2=Automation Waiting, Threshold=, Contact Number=87654321, Date Of Birth=, Company Contact Person=, Meal Restrictions Type=, testname=EditWaitingListRecordTest, execute=yes, Experience=, submenu=Waiting List, newpassword1=, name=, Block=, name1=, Building=, Description=, phonenumber=, EnterText=, Company Contact Person Number=, Deadline Date=, browser=chrome, skill=, Mobile No=, Email1=waitinglist@mailinator.com, Nric=S5753402E, Domain Area of Practice=, Room=, Billing Email=, email=, Age=, Notes=Waiting List Notes, Floor=, Maxintakesize=, menuname=Course Runs, Coursecode=, Company Contact Person Email=, Coursevacdesc=, Scheduleinformation=, Company SME=, TPGateway=, Billing Zip=, Minintakesize=, Payment Amount=, oldpassword1=, Company Name=, coursecode=, username=superadmin@mail.com, Scheduleinfo=})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div//input[@name=&apos;students[0][name]&apos;] (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.tms.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:20)
-	at com.tms.pages.BasePage.clear(BasePage.java:28)
-	at com.tms.pages.WaitingListPage.EnterdetailInName(WaitingListPage.java:81)
-	at com.tms.tests.WaitingListPageTest.EditWaitingListRecordTest(WaitingListPageTest.java:115)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div//input[@name=&apos;students[0][name]&apos;]&quot;}
-  (Session info: chrome=96.0.4664.45)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.0.0-beta-3&apos;, revision: &apos;5d108f9a67&apos;
-System info: host: &apos;LAPTOP-PVF3C24O&apos;, ip: &apos;192.168.5.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a25f6a56349cfbbaa254e758bcf1d01e, findElement {using=xpath, value=//div//input[@name=&apos;students[0][name]&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\2STALL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51436}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51436/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a25f6a56349cfbbaa254e758bcf1d01e
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:198)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
-	at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1258)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:386)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 19 more
-... Removed 13 stack frames
-</div> <!-- stack-trace -->
+                  <a name="AddnewVenueRecordTest({FeesPaid=, Email=, Unit=August Unit, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password...)">
+                  </a> <!-- AddnewVenueRecordTest({FeesPaid=, Email=, Unit=August Unit, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password...) -->
+                  <span class="method-name">AddnewVenueRecordTest</span>
+                  <span class="parameters">({FeesPaid=, Email=, Unit=August Unit, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=, Remarks=, Postalcode=654321, Street=AugustTesting, confirmpassword=, Company uen=, Name2=, Threshold=, Contact Number=, Date Of Birth=, Company Contact Person=, Meal Restrictions Type=, testname=AddnewVenueRecordTest, execute=yes, Experience=, submenu=, newpassword1=, name=, Block=AugustTesting, name1=, Building=AugustBuliding, Description=, phonenumber=, EnterText=, Company Contact Person Number=, Deadline Date=, browser=chrome, skill=, Mobile No=, Email1=, Nric=, Domain Area of Practice=, Room=August Room, Billing Email=, email=, Age=, Notes=, Floor=August Floor, Maxintakesize=, menuname=Venue, Coursecode=, Company Contact Person Email=, Coursevacdesc=, Scheduleinformation=, Company SME=, TPGateway=, Billing Zip=, Minintakesize=, Payment Amount=, oldpassword1=, Company Name=, coursecode=, username=superadmin@mail.com, Scheduleinfo=})</span>
                   <em>
-(Verify button functionality)                  </em>
+(Verify that AddnewVenueRecordTest working or not)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -199,6 +161,10 @@ Session ID: a25f6a56349cfbbaa254e758bcf1d01e
       &lt;class name=&quot;com.tms.tests.CompletedCourseRunPageTest&quot;/&gt;
       &lt;class name=&quot;com.tms.tests.CourseSoftBookingsPageTest&quot;/&gt;
       &lt;class name=&quot;com.tms.tests.WaitingListPageTest&quot;/&gt;
+      &lt;class name=&quot;com.tms.tests.ManagerPageTest&quot;/&gt;
+      &lt;class name=&quot;com.tms.tests.StaffPageTest&quot;/&gt;
+      &lt;class name=&quot;com.tms.tests.TrainerPageTest&quot;/&gt;
+      &lt;class name=&quot;com.tms.tests.VenuePageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -212,7 +178,7 @@ Session ID: a25f6a56349cfbbaa254e758bcf1d01e
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (7 classes)</span>
+                <span class="test-name">Test (11 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -240,14 +206,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'EditWaitingListRecordTest')
-data.setCell(0, 2, 'com.tms.tests.WaitingListPageTest')
-data.setCell(0, 3, 20360);
+data.setCell(0, 1, 'AddnewVenueRecordTest')
+data.setCell(0, 2, 'com.tms.tests.VenuePageTest')
+data.setCell(0, 3, 10213);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -273,20 +239,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.tms.tests.WaitingListPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.tms.tests.VenuePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp([{FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, B...)</span>
+                <span class="method-name">setUp([{FeesPaid=, Email=, Unit=August Unit, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, passwor...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">EditWaitingListRecordTest({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...)</span>
-                <span class="method-start">7949 ms</span>
+                <span class="method-name">AddnewVenueRecordTest({FeesPaid=, Email=, Unit=August Unit, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password...)</span>
+                <span class="method-start">6597 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">28535 ms</span>
+                <span class="method-start">16812 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

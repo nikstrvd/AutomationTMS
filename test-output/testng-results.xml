@@ -1,96 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-18T18:33:31 IST" name="Suite" finished-at="2021-11-18T18:34:01 IST" duration-ms="30439">
+  <suite started-at="2021-11-19T17:28:21 IST" name="Suite" finished-at="2021-11-19T17:28:39 IST" duration-ms="17832">
     <groups>
     </groups>
-    <test started-at="2021-11-18T18:33:31 IST" name="Test" finished-at="2021-11-18T18:34:01 IST" duration-ms="30439">
-      <class name="com.tms.tests.WaitingListPageTest">
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tms.tests.WaitingListPageTest@78691363]" started-at="2021-11-18T18:33:32 IST" name="setUp" finished-at="2021-11-18T18:33:40 IST" duration-ms="7945" status="PASS">
+    <test started-at="2021-11-19T17:28:21 IST" name="Test" finished-at="2021-11-19T17:28:39 IST" duration-ms="17832">
+      <class name="com.tms.tests.VenuePageTest">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tms.tests.VenuePageTest@6b2ea799]" started-at="2021-11-19T17:28:22 IST" name="setUp" finished-at="2021-11-19T17:28:29 IST" duration-ms="6593" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@3a43d133]]>
+                <![CDATA[[Ljava.lang.Object;@288a4658]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="EditWaitingListRecordTest(java.util.Map)[pri:0, instance:com.tms.tests.WaitingListPageTest@78691363]" started-at="2021-11-18T18:33:40 IST" name="EditWaitingListRecordTest" description="Verify button functionality" data-provider="getData" finished-at="2021-11-18T18:34:00 IST" duration-ms="20360" status="FAIL">
+        <test-method signature="AddnewVenueRecordTest(java.util.Map)[pri:0, instance:com.tms.tests.VenuePageTest@6b2ea799]" started-at="2021-11-19T17:28:29 IST" name="AddnewVenueRecordTest" description="Verify that AddnewVenueRecordTest working or not" data-provider="getData" finished-at="2021-11-19T17:28:39 IST" duration-ms="10213" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=, Remarks=, Postalcode=, Street=, confirmpassword=, Company uen=, Name2=Automation Waiting, Threshold=, Contact Number=87654321, Date Of Birth=, Company Contact Person=, Meal Restrictions Type=, testname=EditWaitingListRecordTest, execute=yes, Experience=, submenu=Waiting List, newpassword1=, name=, Block=, name1=, Building=, Description=, phonenumber=, EnterText=, Company Contact Person Number=, Deadline Date=, browser=chrome, skill=, Mobile No=, Email1=waitinglist@mailinator.com, Nric=S5753402E, Domain Area of Practice=, Room=, Billing Email=, email=, Age=, Notes=Waiting List Notes, Floor=, Maxintakesize=, menuname=Course Runs, Coursecode=, Company Contact Person Email=, Coursevacdesc=, Scheduleinformation=, Company SME=, TPGateway=, Billing Zip=, Minintakesize=, Payment Amount=, oldpassword1=, Company Name=, coursecode=, username=superadmin@mail.com, Scheduleinfo=}]]>
+                <![CDATA[{FeesPaid=, Email=, Unit=August Unit, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=, Remarks=, Postalcode=654321, Street=AugustTesting, confirmpassword=, Company uen=, Name2=, Threshold=, Contact Number=, Date Of Birth=, Company Contact Person=, Meal Restrictions Type=, testname=AddnewVenueRecordTest, execute=yes, Experience=, submenu=, newpassword1=, name=, Block=AugustTesting, name1=, Building=AugustBuliding, Description=, phonenumber=, EnterText=, Company Contact Person Number=, Deadline Date=, browser=chrome, skill=, Mobile No=, Email1=, Nric=, Domain Area of Practice=, Room=August Room, Billing Email=, email=, Age=, Notes=, Floor=August Floor, Maxintakesize=, menuname=Venue, Coursecode=, Company Contact Person Email=, Coursevacdesc=, Scheduleinformation=, Company SME=, TPGateway=, Billing Zip=, Minintakesize=, Payment Amount=, oldpassword1=, Company Name=, coursecode=, username=superadmin@mail.com, Scheduleinfo=}]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //div//input[@name='students[0][name]'] (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div//input[@name='students[0][name]'] (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at com.tms.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:20)
-at com.tms.pages.BasePage.clear(BasePage.java:28)
-at com.tms.pages.WaitingListPage.EnterdetailInName(WaitingListPage.java:81)
-at com.tms.tests.WaitingListPageTest.EditWaitingListRecordTest(WaitingListPageTest.java:115)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div//input[@name='students[0][name]']"}
-  (Session info: chrome=96.0.4664.45)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
-System info: host: 'LAPTOP-PVF3C24O', ip: '192.168.5.77', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a25f6a56349cfbbaa254e758bcf1d01e, findElement {using=xpath, value=//div//input[@name='students[0][name]']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\2STALL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51436}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51436/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a25f6a56349cfbbaa254e758bcf1d01e
-at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:198)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
-at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1258)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:386)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-... 19 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EditWaitingListRecordTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tms.tests.WaitingListPageTest@78691363]" started-at="2021-11-18T18:34:00 IST" name="tearDown" finished-at="2021-11-18T18:34:01 IST" duration-ms="1148" status="PASS">
+        </test-method> <!-- AddnewVenueRecordTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tms.tests.VenuePageTest@6b2ea799]" started-at="2021-11-19T17:28:39 IST" name="tearDown" finished-at="2021-11-19T17:28:39 IST" duration-ms="132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.tms.tests.WaitingListPageTest -->
+      </class> <!-- com.tms.tests.VenuePageTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
