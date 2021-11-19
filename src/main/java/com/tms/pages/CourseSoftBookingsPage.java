@@ -7,8 +7,8 @@ public class CourseSoftBookingsPage extends BasePage{
 	
 	private final By Addnew = By.xpath("//i[@class='add-new']");
 	private final By Editrecord = By.xpath("(//a[.=' Edit'])[1]");
-	private final By SelectCourseRun = By.xpath("(//span[@id='select2-course_id-container'])[1]");
-	private final By selectcourserunfromdropdown = By.xpath("(//li[@class='select2-results__option'])[5]");
+	private final By SelectCourseRun = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/div[1]/span[1]/span[1]/span[1]/span[1]");
+	private final By selectcourserunfromdropdown = By.xpath("/html[1]/body[1]/span[1]/span[1]/span[2]/ul[1]/li[5]");
 	private final By deadlinedate = By.id("deadline_date");
 	private final By Name = By.xpath("//div//input[@name='students[0][name]']");
 	private final By Name1 = By.id("name");
@@ -23,11 +23,17 @@ public class CourseSoftBookingsPage extends BasePage{
 	private final By Selectstatus = By.xpath("//option[contains(text(),'Booked')]");
 	private final By updateprofile = By.cssSelector(".btn.btn-primary.mar-r-10");
 	private final By Listdots = By.xpath("(//span[@class='list-dots'])[1]");
-	private final By Notes = By.xpath("(//textarea[@name='students[0][notes]'])[1]");
+	private final By Notes = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[2]/div[6]/div[1]/textarea[1]");
 	private final By Enrolstudent = By.xpath("(//a[contains(text(),'Enroll Student')])[1]");
 	private final By edit = By.xpath("//div[@class='dropdown dot-list show']//li[2]");
 	private final By viewnotes = By.xpath("(//a[@class='viewnotes'][normalize-space()='View Note'])[1]");
+	private final By closenotes = By.xpath("//button[normalize-space()='Close']");
 	
+	
+	public void clickonCloseButtonfromNotespopup()
+	{
+		click(closenotes, WaitStrategy.CLICKABLE, "closenotes button");
+	}
 	
 	public void clickonEnrolstudentfromListdotsButton()
 	{

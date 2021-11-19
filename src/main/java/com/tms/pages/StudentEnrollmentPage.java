@@ -39,12 +39,14 @@ public class StudentEnrollmentPage extends BasePage {
 	private final By billingcounty = By.id("select2-billing_country-container");
 	private final By billingcountrydropdown = By.xpath("//li[text()='Singapore']");
 	private final By paymenttpgateway = By.id("payment_tpg_status");
-	private final By paymenttpgatewaystatus = By.xpath("//option[text()='Partial']");	
+	private final By paymenttpgatewaystatus = By.xpath("//option[text()='Full']");	
 	private final By Remark = By.id("remarks");
 	private final By Paymentamount = By.id("amount");	
 	private final By paymentstatus = By.id("payment_status");
-	private final By paymentstatusdropdown = By.xpath("//option[text()='Partial']");
-	private final By Mealrestriction = By.xpath("//option[text()='Yes']");
+	private final By paymentstatusdropdown = By.xpath("//option[text()='Full']");
+	private final By Mealrestrictionselect = By.id("meal_restrictions");
+	private final By Mealrestriction = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[14]/div[1]/div[1]/select[1]/option[2]");
+	private final By Mealrestrictiontypeselect = By.id("meal_restrictions_type");
 	private final By Mealrestrictiontype = By.xpath("//option[text()='Other']");
 	private final By Mealrestricationother = By.id("meal_restrictions_other");
 	private final By updateprofile = By.cssSelector(".btn.btn-primary.mar-r-10");
@@ -52,8 +54,8 @@ public class StudentEnrollmentPage extends BasePage {
 	private final By Listdots = By.xpath("(//span[@class='list-dots'])[1]");
 	private final By View = By.xpath("(//li)[25]");
 	private final By Viewpayments = By.xpath("(//a[.='View Payments'])[1]");
-	private final By checkbox = By.xpath("(//label[contains(text(),'I/the trainee have/has basic computer navigational')])[1]");
-	private final By checkbox1 = By.xpath("(//label[contains(text(),'I/the trainee have/has thoroughly read the course ')])[1]");
+	private final By checkbox = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[14]/div[4]/div[1]/div[1]/label[1]");
+	private final By checkbox1 = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[14]/div[5]/div[1]/div[1]/label[1]");
 	
 	public void ClickonCheckbox()
 	{
@@ -190,8 +192,15 @@ public class StudentEnrollmentPage extends BasePage {
 	
 	public void ClickonMealrestrictiondropdown()
 	{
+		click(Mealrestrictionselect, WaitStrategy.CLICKABLE, "Mealrestrictionselect button");
 		click(Mealrestriction, WaitStrategy.CLICKABLE, "Mealrestriction button");
-		click(Mealrestrictiontype, WaitStrategy.CLICKABLE, "Mealrestrictiontype button");		
+		
+	}
+	
+	public void ClickonMealrestictiontypedropdown()
+	{
+		click(Mealrestrictiontypeselect, WaitStrategy.CLICKABLE, "Mealrestriction button");
+		click(Mealrestrictiontype, WaitStrategy.CLICKABLE, "Mealrestrictiontype button");	
 	}
 	
 	public StudentEnrollmentPage EnterdetailInName(String Name)

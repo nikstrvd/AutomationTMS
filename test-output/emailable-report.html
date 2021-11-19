@@ -9,19 +9,32 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">19,172</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">30,439</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.tms.tests.CourseSoftBookingsPageTest</td><td><a href="#m0">ClickonEnrolStudentfromListdots</a></td><td rowspan="1">1637154629729</td><td rowspan="1">7041</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.tms.tests.WaitingListPageTest</td><td><a href="#m0">EditWaitingListRecordTest</a></td><td rowspan="1">1637240620025</td><td rowspan="1">20360</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.tms.tests.CourseSoftBookingsPageTest#ClickonEnrolStudentfromListdots</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{FeesPaid=, Email=testing1@mailinator.com, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=12 Mark Street, Remarks=Testing Automation, Postalcode=, Street=, confirmpassword=, Company uen=Add44342, Name2=Yang Ping, Threshold=, Contact Number=25232526, Date Of Birth=1985-10-07, Company Contact Person=Tester1, Meal Restrictions Type=Vegan, testname=ClickonEnrolStudentfromListdots, execute=yes, Experience=, submenu=Soft Bookings, newpassword1=, name=, Block=, name1=, Building=, Description=, phonenumber=, EnterText=, Company Contact Person Number=25252523, Deadline Date=, browser=chrome, skill=, Mobile No=98985235, Email1=yangping@mailinator.com, Nric=S5753402B, Domain Area of Practice=, Room=, Billing Email=companybill@mailinator.com, email=, Age=30, Notes=tester notes, Floor=, Maxintakesize=, menuname=Course Runs, Coursecode=, Company Contact Person Email=tester1@mailinator.com, Coursevacdesc=, Scheduleinformation=, Company SME=, TPGateway=, Billing Zip=652523, Minintakesize=, Payment Amount=598, oldpassword1=, Company Name=Alpha Pvt Ltd, coursecode=, username=superadmin@mail.com, Scheduleinfo=}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidElementStateException: invalid element state
+<h2>Test</h2><h3 id="m0">com.tms.tests.WaitingListPageTest#EditWaitingListRecordTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=, Remarks=, Postalcode=, Street=, confirmpassword=, Company uen=, Name2=Automation Waiting, Threshold=, Contact Number=87654321, Date Of Birth=, Company Contact Person=, Meal Restrictions Type=, testname=EditWaitingListRecordTest, execute=yes, Experience=, submenu=Waiting List, newpassword1=, name=, Block=, name1=, Building=, Description=, phonenumber=, EnterText=, Company Contact Person Number=, Deadline Date=, browser=chrome, skill=, Mobile No=, Email1=waitinglist@mailinator.com, Nric=S5753402E, Domain Area of Practice=, Room=, Billing Email=, email=, Age=, Notes=Waiting List Notes, Floor=, Maxintakesize=, menuname=Course Runs, Coursecode=, Company Contact Person Email=, Coursevacdesc=, Scheduleinformation=, Company SME=, TPGateway=, Billing Zip=, Minintakesize=, Payment Amount=, oldpassword1=, Company Name=, coursecode=, username=superadmin@mail.com, Scheduleinfo=}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div//input[@name=&apos;students[0][name]&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.tms.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:20)
+	at com.tms.pages.BasePage.clear(BasePage.java:28)
+	at com.tms.pages.WaitingListPage.EnterdetailInName(WaitingListPage.java:81)
+	at com.tms.tests.WaitingListPageTest.EditWaitingListRecordTest(WaitingListPageTest.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div//input[@name=&apos;students[0][name]&apos;]&quot;}
   (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.0.0-beta-3&apos;, revision: &apos;5d108f9a67&apos;
 System info: host: &apos;LAPTOP-PVF3C24O&apos;, ip: &apos;192.168.5.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2a379adb3d17603c7255145cebc48a18, clearElement {id=e7a8fb30-6d57-4877-8f4d-54b343e68a84}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\2STALL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50925}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50925/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (2a379adb3d17603c7255145cebc48a18)] -&gt; id: company_sme]
-Session ID: 2a379adb3d17603c7255145cebc48a18
+Command: [a25f6a56349cfbbaa254e758bcf1d01e, findElement {using=xpath, value=//div//input[@name=&apos;students[0][name]&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\2STALL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51436}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51436/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a25f6a56349cfbbaa254e758bcf1d01e
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:198)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -29,17 +42,13 @@ Session ID: 2a379adb3d17603c7255145cebc48a18
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:237)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
-	at com.tms.pages.BasePage.clear(BasePage.java:29)
-	at com.tms.pages.StudentEnrollmentPage.EnterdetailIncompanysme(StudentEnrollmentPage.java:213)
-	at com.tms.tests.CourseSoftBookingsPageTest.ClickonEnrolStudentfromListdots(CourseSoftBookingsPageTest.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1258)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:386)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 19 more
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

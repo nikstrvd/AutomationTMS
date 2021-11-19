@@ -15,6 +15,7 @@
 			<class name="com.tms.tests.CourseRunPageTest"/>
 			<class name="com.tms.tests.CompletedCourseRunPageTest"/>
 			<class name="com.tms.tests.CourseSoftBookingsPageTest"/>
+			<class name="com.tms.tests.WaitingListPageTest"/>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->	

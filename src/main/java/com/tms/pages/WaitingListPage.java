@@ -11,18 +11,20 @@ public class WaitingListPage extends BasePage {
 	private final By updateprofile = By.cssSelector(".btn.btn-primary.mar-r-10");
 	private final By Listdots = By.xpath("(//span[@class='list-dots'])[1]");
 	private final By Courserun = By.xpath("//span[@class='select2-selection__rendered']");
-	private final By Courserundropdown = By.xpath("//li[.='2021-05-13 - 2021-05-15 WSQ Digital Marketing Analytics Course Registration']");
+	private final By Courserundropdown = By.xpath("/html[1]/body[1]/span[1]/span[1]/span[2]/ul[1]/li[5]");
 	private final By Name = By.xpath("//div//input[@name='students[0][name]']");
 	private final By Contactnumber = By.xpath("//div//input[@name='students[0][contact_number]']");
 	private final By Email = By.xpath("//div//input[@name='students[0][email]']");
 	private final By Nric = By.xpath("//div//input[@name='students[0][nric]']");
-	private final By Status = By.xpath("//select[@name='status']");
-	private final By Selectstatus = By.xpath("//option[contains(text(),'Cancelled')]");
+	private final By Status = By.xpath("(//select[@name='students[0][status]'])[1]");
+	private final By Selectstatus = By.xpath("//option[@value='1']");
 	private final By Name1 = By.id("name");
 	private final By Contactnumber1 = By.xpath("//input[@name='contact_number']");
 	private final By Email1 = By.xpath("//input[@name='email']");
 	private final By Nric1 = By.xpath("//input[@name='nric']");
 	private final By Status1 = By.xpath("//select[@name='students[0][status]']");
+	private final By Notes = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[7]/div[1]/textarea[1]");
+	
 	
 	public void clickonListdotsButton()
 	{
@@ -66,6 +68,13 @@ public void Selectstatus() {
 		
 		click(Selectstatus, WaitStrategy.CLICKABLE, "Selectstatus button");
 	}
+
+public WaitingListPage EnterdetailInNotes(String notes)
+{
+	clear(Notes, notes, WaitStrategy.PRESENSE, "notes Textbox field");
+	sendKeys(Notes, notes, WaitStrategy.PRESENSE, "notes Textbox field");
+	return this;
+}
 
 public WaitingListPage EnterdetailInName(String name)
 {

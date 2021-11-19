@@ -55,10 +55,11 @@ public class CourseSoftBookingsPageTest extends BaseTest {
 		  cp.clickonEnrolstudentfromListdotsButton();
 		  se.selectSponsered();
 		  se.selectSponseredfromdropdown();
-		  se.EnterdetailIncompanysme(data.get("Company SME"));
+		  //se.EnterdetailIncompanysme(data.get("Company SME"));
 		  se.selectnationality();
 		  se.selectnationalitydropdown();
 		  se.EnterdetailInAge(data.get("Age"));
+		  bp.scroll();
 		  se.EnterdetailInName(data.get("Name3"));
 		  se.EnterdetailInNric(data.get("Nric"));
 		  se.EnterdetailInemail(data.get("Email"));
@@ -70,26 +71,29 @@ public class CourseSoftBookingsPageTest extends BaseTest {
 		  se.selectdesignationdropdown();
 		  se.selectsalary();
 		  se.selectsalarydropdown();
-		  se.EnterdetailIncompanyname(data.get("Company Name"));
-		  se.EnterdetailIncompanyuen(data.get("Company uen"));		  
-		  se.EnterdetailIncompanycontactperson(data.get("Company Contact Person"));
-		  se.EnterdetailIncompanycontactpersonemail(data.get("Company Contact Person Email"));
-		  se.EnterdetailIncompanycontactpersonnumber(data.get("Company Contact Person Number"));
-		  bp.scroll3();
+		  bp.scroll();
+		  //se.EnterdetailIncompanyname(data.get("Company Name"));
+		  //se.EnterdetailIncompanyuen(data.get("Company uen"));		  
+		  //se.EnterdetailIncompanycontactperson(data.get("Company Contact Person"));
+		  //se.EnterdetailIncompanycontactpersonemail(data.get("Company Contact Person Email"));
+		  //se.EnterdetailIncompanycontactpersonnumber(data.get("Company Contact Person Number"));
 		  se.EnterdetailInbillingmail(data.get("Billing Email"));
 		  se.EnterdetailInbillingzip(data.get("Billing Zip"));
 		  se.EnterdetailInbillingaddress(data.get("Billing Address"));
 		  se.selectbillingcounty();
 		  se.selectbillingcountydropdown();
 		  se.EnterdetailInRemark(data.get("Remarks"));
+		  bp.scroll();
 		  se.EnterdetailInPaymentamount(data.get("Payment Amount"));
 		  se.selecttpgatewaypaymentstatus();
 		  se.selectpaymentstatus();
 		  se.selectpaymentstatusdropdown();
 		  se.ClickonMealrestrictiondropdown();
+		  se.ClickonMealrestictiontypedropdown();
 		  se.EnterdetailInMealrestrictiontype(data.get("Meal Restrictions Type"));
 		  se.ClickonCheckbox();
 		  se.ClickonCheckbox1();
+		  bp.scroll();
 		  se.updaterecord();
 		  String ActualTitle = lp.getTitle();
 		  Assert.assertEquals(ActualTitle, "Student Enrolment List - TMS");
@@ -113,9 +117,23 @@ public class CourseSoftBookingsPageTest extends BaseTest {
 		  cp.EnterdetailInNric1(data.get("Nric"));
 		  cp.Status();
 		  cp.Selectstatus();
+		  cp.EnterdetailInNotes(data.get("Notes"));
 		  cp.updaterecord();
 		  String ActualTitle = lp.getTitle();
-			Assert.assertEquals(ActualTitle, "Soft Booking Course - TMS");
+			Assert.assertEquals(ActualTitle, "Add Student Enrolment - TMS");
+  
+	  }	
+	  
+	  @Test
+	  public void ViewNotesofCourseSoftBookingsTest(Map<String, String> data) 
+	  { 
+		  DashboardPage title = lp.enterUserName(data.get("username")).enterPassword(data.get("password")).clickLogin();
+		  dp.clickonSubMenu(data.get("menuname"), data.get("submenu"));
+		  cp.clickonListdotsButton();
+		  cp.clickonViewnotesfromListdotsButton();
+		  cp.clickonCloseButtonfromNotespopup();
+		  String ActualTitle = lp.getTitle();
+		  Assert.assertEquals(ActualTitle, "Soft Booking Course - TMS");
   
 	  }	
 }
