@@ -60,6 +60,54 @@ public class CoursePage extends BasePage {
 	private final By Attendence = By.xpath("//ul[@class='dropdown-menu show']//a[contains(text(),'Attendance & Assessments')]");
 	private final By Editrecord1 = By.xpath("//ul[@class='dropdown-menu show']//a[contains(text(),'Edit')]");	
 	
+	private final By Traineelist = By.xpath("//button[@id='nav-trainee-tab']");
+	private final By Softbookingstab = By.xpath("//button[@id='nav-soft-booking-tab']");
+	private final By Waitinglisttab = By.xpath("//button[@id='nav-waiting-list-tab']");
+	private final By Paymentlisttab = By.xpath("//button[@id='nav-payments-list-tab']");
+	private final By Refersherstab = By.xpath("//button[@id='nav-refresher-tab']");
+	private final By View1 = By.xpath("//div[@class='dropdown dot-list show']//li[1]");
+	private final By edit1 = By.xpath("//ul[@class='dropdown-menu show']//a[contains(text(),'Edit')]");
+	private final By viewpayments = By.xpath("//ul[@class='dropdown-menu show']//a[@class='viewpayment'][normalize-space()='View Payments']");
+	
+	public void clickonView1()
+	{
+		click(View1, WaitStrategy.CLICKABLE, "View1 Button");
+	}
+	
+	public void clickonedit1()
+	{
+		click(edit1, WaitStrategy.CLICKABLE, "edit1 Button");
+	}
+	
+	public void clickonviewpayments()
+	{
+		click(viewpayments, WaitStrategy.CLICKABLE, "viewpayments Button");
+	}
+	public void clickonTraineelistTab()
+	{
+		click(Traineelist, WaitStrategy.CLICKABLE, "Traineelist Tab");
+	}
+	
+	public void clickonSoftbookingstab()
+	{
+		click(Softbookingstab, WaitStrategy.CLICKABLE, "Softbookingstab Tab");
+	}
+	
+	public void clickonWaitinglisttab()
+	{
+		click(Waitinglisttab, WaitStrategy.CLICKABLE, "Waitinglisttab Tab");
+	}
+	
+	public void clickonPaymentlisttab()
+	{
+		click(Paymentlisttab, WaitStrategy.CLICKABLE, "Paymentlisttab Tab");
+	}
+	
+	public void clickonRefersherstab()
+	{
+		click(Refersherstab, WaitStrategy.CLICKABLE, "Refersherstab Tab");
+	}
+	
 	public void clickonViewFromListdotsButton()
 	{
 		click(View, WaitStrategy.CLICKABLE, "View button");
