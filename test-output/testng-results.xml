@@ -2,38 +2,38 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-19T17:28:21 IST" name="Suite" finished-at="2021-11-19T17:28:39 IST" duration-ms="17832">
+  <suite started-at="2021-11-23T17:50:43 IST" name="Suite" finished-at="2021-11-23T17:51:03 IST" duration-ms="20437">
     <groups>
     </groups>
-    <test started-at="2021-11-19T17:28:21 IST" name="Test" finished-at="2021-11-19T17:28:39 IST" duration-ms="17832">
-      <class name="com.tms.tests.VenuePageTest">
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tms.tests.VenuePageTest@6b2ea799]" started-at="2021-11-19T17:28:22 IST" name="setUp" finished-at="2021-11-19T17:28:29 IST" duration-ms="6593" status="PASS">
+    <test started-at="2021-11-23T17:50:43 IST" name="Test" finished-at="2021-11-23T17:51:03 IST" duration-ms="20437">
+      <class name="com.tms.tests.StudentEnrollmentPageTest">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tms.tests.StudentEnrollmentPageTest@62379589]" started-at="2021-11-23T17:50:44 IST" name="setUp" finished-at="2021-11-23T17:50:52 IST" duration-ms="7791" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@288a4658]]>
+                <![CDATA[[Ljava.lang.Object;@5339bbad]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AddnewVenueRecordTest(java.util.Map)[pri:0, instance:com.tms.tests.VenuePageTest@6b2ea799]" started-at="2021-11-19T17:28:29 IST" name="AddnewVenueRecordTest" description="Verify that AddnewVenueRecordTest working or not" data-provider="getData" finished-at="2021-11-19T17:28:39 IST" duration-ms="10213" status="PASS">
+        <test-method signature="FilterBydate(java.util.Map)[pri:0, instance:com.tms.tests.StudentEnrollmentPageTest@62379589]" started-at="2021-11-23T17:50:52 IST" name="FilterBydate" description="Verify filter finctionality" data-provider="getData" finished-at="2021-11-23T17:51:03 IST" duration-ms="11522" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{FeesPaid=, Email=, Unit=August Unit, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=, Remarks=, Postalcode=654321, Street=AugustTesting, confirmpassword=, Company uen=, Name2=, Threshold=, Contact Number=, Date Of Birth=, Company Contact Person=, Meal Restrictions Type=, testname=AddnewVenueRecordTest, execute=yes, Experience=, submenu=, newpassword1=, name=, Block=AugustTesting, name1=, Building=AugustBuliding, Description=, phonenumber=, EnterText=, Company Contact Person Number=, Deadline Date=, browser=chrome, skill=, Mobile No=, Email1=, Nric=, Domain Area of Practice=, Room=August Room, Billing Email=, email=, Age=, Notes=, Floor=August Floor, Maxintakesize=, menuname=Venue, Coursecode=, Company Contact Person Email=, Coursevacdesc=, Scheduleinformation=, Company SME=, TPGateway=, Billing Zip=, Minintakesize=, Payment Amount=, oldpassword1=, Company Name=, coursecode=, username=superadmin@mail.com, Scheduleinfo=}]]>
+                <![CDATA[{FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=, Remarks=, Postalcode=, Street=, confirmpassword=, Company uen=, Name2=, Threshold=, Contact Number=, Date Of Birth=, Company Contact Person=, Meal Restrictions Type=, testname=FilterBydate, execute=yes, Experience=, submenu=, newpassword1=, name=, Block=, name1=, Building=, Description=, phonenumber=, EnterText=, Company Contact Person Number=, Deadline Date=, browser=chrome, skill=, Mobile No=, Email1=, Nric=, Domain Area of Practice=, Room=, Billing Email=, email=, Age=, Notes=, Floor=, Maxintakesize=, menuname=Student Enrolment, Coursecode=, Company Contact Person Email=, Coursevacdesc=, Scheduleinformation=, Company SME=, TPGateway=, Billing Zip=, Minintakesize=, Payment Amount=, oldpassword1=, Company Name=, coursecode=, username=superadmin@mail.com, Scheduleinfo=}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddnewVenueRecordTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tms.tests.VenuePageTest@6b2ea799]" started-at="2021-11-19T17:28:39 IST" name="tearDown" finished-at="2021-11-19T17:28:39 IST" duration-ms="132" status="PASS">
+        </test-method> <!-- FilterBydate -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tms.tests.StudentEnrollmentPageTest@62379589]" started-at="2021-11-23T17:51:03 IST" name="tearDown" finished-at="2021-11-23T17:51:03 IST" duration-ms="249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.tms.tests.VenuePageTest -->
+      </class> <!-- com.tms.tests.StudentEnrollmentPageTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -132,5 +132,23 @@ public class StudentEnrollmentPageTest extends BaseTest {
 		  String ActualTitle = lp.getTitle();
 		  Assert.assertEquals(ActualTitle, "Student Enrolment List - TMS");
 	  }	
+	
+	@Test
+	public void FilterBydate(Map<String, String> data)
+	{
+		DashboardPage title = lp.enterUserName(data.get("username")).enterPassword(data.get("password")).clickLogin();
+		  dp.clickonMenu(data.get("menuname"));
+		  se.ClickonStartdate();
+		  se.ClickonEnddate();
+		  se.ClickonSearchdate();
+		  bp.scroll();
+		  se.clickonListdotsButton();
+		  se.View1();
+			/*
+			 * String ActualTitle = lp.getTitle(); Assert.assertEquals(ActualTitle,
+			 * "Student Enrolment - TMS");
+			 */
+	}
+		
 	  
 }

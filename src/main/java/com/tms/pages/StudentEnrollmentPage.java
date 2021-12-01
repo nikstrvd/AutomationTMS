@@ -57,6 +57,34 @@ public class StudentEnrollmentPage extends BasePage {
 	private final By checkbox = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[14]/div[4]/div[1]/div[1]/label[1]");
 	private final By checkbox1 = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[14]/div[5]/div[1]/div[1]/label[1]");
 	
+	
+	private final By startdate = By.id("startDate");
+	private final By selectstartdate = By.xpath("/html[1]/body[1]/div[4]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[2]");
+	private final By enddate = By.id("endDate");
+	private final By selectenddate = By.xpath("/html[1]/body[1]/div[5]/div[2]/div[1]/table[1]/tbody[1]/tr[5]/td[3]");
+	private final By searchdate = By.id("search_date");
+	
+	private final By View1 = By.xpath("(//li)[31]");
+	private final By Enrolmentres = By.xpath("ul[class='dropdown-menu show'] a[type='enrolment']");
+	
+
+	public void ClickonSearchdate()
+	{
+		click(searchdate, WaitStrategy.CLICKABLE, "checkbox button");
+
+	}
+	
+	public void ClickonStartdate()
+	{
+		click(startdate, WaitStrategy.CLICKABLE, "startdate button");
+		click(selectstartdate, WaitStrategy.CLICKABLE, "selectstartdate button");	
+	}
+	
+	public void ClickonEnddate()
+	{
+		click(enddate, WaitStrategy.CLICKABLE, "enddate button");
+		click(selectenddate, WaitStrategy.CLICKABLE, "selectenddate button");	
+	}
 	public void ClickonCheckbox()
 	{
 		click(checkbox, WaitStrategy.CLICKABLE, "checkbox button");
@@ -66,6 +94,12 @@ public class StudentEnrollmentPage extends BasePage {
 	public void ClickonCheckbox1()
 	{
 		click(checkbox1, WaitStrategy.CLICKABLE, "checkbox button");
+
+	}
+	
+	public void View1()
+	{
+		click(View1, WaitStrategy.CLICKABLE, "View button");
 
 	}
 	
