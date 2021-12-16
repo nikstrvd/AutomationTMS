@@ -7,7 +7,7 @@ import com.tms.enums.WaitStrategy;
 public class StudentEnrollmentPage extends BasePage {
 	
 	private final By SelectSession = By.xpath("//span[@title='Select Course']");
-	private final By selectsessionfromdropdown = By.xpath("(//li[@class='select2-results__option'])[5]");
+	private final By selectsessionfromdropdown = By.xpath("(//li[@class='select2-results__option'])[1]");
 	private final By Editrecord = By.xpath("(//a[.='Edit'])[1]");
 	
 	
@@ -64,8 +64,10 @@ public class StudentEnrollmentPage extends BasePage {
 	private final By selectenddate = By.xpath("/html[1]/body[1]/div[5]/div[2]/div[1]/table[1]/tbody[1]/tr[5]/td[3]");
 	private final By searchdate = By.id("search_date");
 	
-	private final By View1 = By.xpath("(//li)[31]");
+	private final By View1 = By.xpath("(//a[contains(text(),'View')])[1]");
 	private final By Enrolmentres = By.xpath("ul[class='dropdown-menu show'] a[type='enrolment']");
+	private final By Sponsereddropdown1 = By.xpath("(//option[@value='Yes'][normalize-space()='Yes'])[1]");
+	
 	
 
 	public void ClickonSearchdate()
@@ -151,6 +153,11 @@ public class StudentEnrollmentPage extends BasePage {
 	public void selectSponseredfromdropdown()
 	{
 		click(Sponsereddropdown, WaitStrategy.CLICKABLE, "Sponsereddropdown button");
+	}
+	
+	public void selectSponseredfromdropdown1()
+	{
+		click(Sponsereddropdown1, WaitStrategy.CLICKABLE, "Sponsereddropdown button");
 	}
 	
 	public void selectnationality()
