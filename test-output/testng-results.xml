@@ -2,43 +2,43 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-16T18:27:18 IST" name="Suite" finished-at="2021-12-16T18:27:38 IST" duration-ms="19457">
+  <suite started-at="2021-12-22T19:15:38 IST" name="Suite" finished-at="2021-12-22T19:15:53 IST" duration-ms="14720">
     <groups>
     </groups>
-    <test started-at="2021-12-16T18:27:18 IST" name="Test" finished-at="2021-12-16T18:27:38 IST" duration-ms="19457">
-      <class name="com.tms.tests.StudentEnrollmentPageTest">
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tms.tests.StudentEnrollmentPageTest@1d296da]" started-at="2021-12-16T18:27:19 IST" name="setUp" finished-at="2021-12-16T18:27:25 IST" duration-ms="5782" status="PASS">
+    <test started-at="2021-12-22T19:15:38 IST" name="Test" finished-at="2021-12-22T19:15:53 IST" duration-ms="14720">
+      <class name="com.tms.tests.ProgramTypePageTest">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tms.tests.ProgramTypePageTest@45752059]" started-at="2021-12-22T19:15:39 IST" name="setUp" finished-at="2021-12-22T19:15:46 IST" duration-ms="7280" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@31611954]]>
+                <![CDATA[[Ljava.lang.Object;@6813a331]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AddStudentEnrollmentRecordTest(java.util.Map)[pri:0, instance:com.tms.tests.StudentEnrollmentPageTest@1d296da]" started-at="2021-12-16T18:27:25 IST" name="AddStudentEnrollmentRecordTest" description="Verify that user is able to add student enrollment record in TMS application" data-provider="getData" finished-at="2021-12-16T18:27:37 IST" duration-ms="12100" status="FAIL">
+        <test-method signature="EditProgramType(java.util.Map)[pri:0, instance:com.tms.tests.ProgramTypePageTest@45752059]" started-at="2021-12-22T19:15:46 IST" name="EditProgramType" description="EditProgramType in TMS Application" data-provider="getData" finished-at="2021-12-22T19:15:52 IST" duration-ms="6017" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{FeesPaid=, Email=ronald@mailinator.com, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=Ronald Christian, password=123456, Billing Address=12 Mark Street, Remarks=Testing Student Enrollment, Postalcode=, Street=, confirmpassword=, Company uen=, Name2=, Threshold=, Contact Number=, Date Of Birth=10/10/1998, Company Contact Person=Roma Edward, Meal Restrictions Type=No, testname=AddStudentEnrollmentRecordTest, execute=yes, Experience=, submenu=, newpassword1=, name=, Block=, name1=, Building=, Description=, phonenumber=, EnterText=, Company Contact Person Number=85956525, Deadline Date=, browser=chrome, skill=, Mobile No=65253625, Email1=, Nric=S3010700D, Domain Area of Practice=, Room=, Billing Email=edward@mailinator.com, email=, Age=30, Notes=, Floor=, Maxintakesize=, menuname=Student Enrolment, Coursecode=, Company Contact Person Email=romaedward@mailinator.com, Coursevacdesc=, Scheduleinformation=, Company SME=Digital Marketing 1, TPGateway=, Billing Zip=256521, Minintakesize=, Payment Amount=799, oldpassword1=, Company Name=2Stallions, coursecode=, username=superadmin@mail.com, Scheduleinfo=}]]>
+                <![CDATA[{FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=, Remarks=, Postalcode=, Street=, confirmpassword=, Company uen=, Name2=, Threshold=, Contact Number=, Date Of Birth=, Company Contact Person=, Meal Restrictions Type=, testname=EditProgramType, execute=yes, Experience=, Student Name=, submenu=Program Type, newpassword1=, name=Edit Program Type, Block=, name1=, Building=, Description=, phonenumber=, EnterText=, Student Mobile=, Please specify meal restriction=, Company Contact Person Number=, Deadline Date=, Studnet Date Of Birth=, browser=chrome, skill=, Mobile No=, Email1=, Nric=, Domain Area of Practice=, Room=, Billing Email=, email=, Age=, Notes=, Student NRIC=, Floor=, Maxintakesize=, menuname=Course, Student Address=, Coursecode=, Company Contact Person Email=, Coursevacdesc=, Scheduleinformation=, Student Email=, Company SME=, TPGateway=, Billing Zip=, Minintakesize=, Payment Amount=, oldpassword1=, Company Name=, coursecode=, username=superadmin@mail.com, Scheduleinfo=}]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Student Enrolment List - TMS] but found [Add Student Enrolment - TMS]]]>
+              <![CDATA[expected [Student Enrolment List - TMS] but found [Program Type - TMS]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Student Enrolment List - TMS] but found [Add Student Enrolment - TMS]
+              <![CDATA[java.lang.AssertionError: expected [Student Enrolment List - TMS] but found [Program Type - TMS]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at com.tms.tests.StudentEnrollmentPageTest.AddStudentEnrollmentRecordTest(StudentEnrollmentPageTest.java:70)
+at com.tms.tests.ProgramTypePageTest.EditProgramType(ProgramTypePageTest.java:46)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -59,12 +59,12 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddStudentEnrollmentRecordTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tms.tests.StudentEnrollmentPageTest@1d296da]" started-at="2021-12-16T18:27:38 IST" name="tearDown" finished-at="2021-12-16T18:27:38 IST" duration-ms="219" status="PASS">
+        </test-method> <!-- EditProgramType -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tms.tests.ProgramTypePageTest@45752059]" started-at="2021-12-22T19:15:53 IST" name="tearDown" finished-at="2021-12-22T19:15:53 IST" duration-ms="298" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.tms.tests.StudentEnrollmentPageTest -->
+      </class> <!-- com.tms.tests.ProgramTypePageTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

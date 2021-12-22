@@ -45,7 +45,7 @@ public class StudentEnrollmentPage extends BasePage {
 	private final By paymentstatus = By.id("payment_status");
 	private final By paymentstatusdropdown = By.xpath("//option[text()='Full']");
 	private final By Mealrestrictionselect = By.id("meal_restrictions");
-	private final By Mealrestriction = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[14]/div[1]/div[1]/select[1]/option[2]");
+	private final By Mealrestriction = By.xpath("(//option[@value='Yes'][normalize-space()='Yes'])[3]");
 	private final By Mealrestrictiontypeselect = By.id("meal_restrictions_type");
 	private final By Mealrestrictiontype = By.xpath("//option[text()='Other']");
 	private final By Mealrestricationother = By.id("meal_restrictions_other");
@@ -57,6 +57,8 @@ public class StudentEnrollmentPage extends BasePage {
 	private final By checkbox = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[14]/div[4]/div[1]/div[1]/label[1]");
 	private final By checkbox1 = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[14]/div[5]/div[1]/div[1]/label[1]");
 	
+	private final By checkbox3 = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[13]/div[4]/div[1]/div[1]/label[1]");
+	private final By checkbox4 = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[13]/div[5]/div[1]/div[1]/label[1]");
 	
 	private final By startdate = By.id("startDate");
 	private final By selectstartdate = By.xpath("/html[1]/body[1]/div[4]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[2]");
@@ -67,6 +69,10 @@ public class StudentEnrollmentPage extends BasePage {
 	private final By View1 = By.xpath("(//a[contains(text(),'View')])[1]");
 	private final By Enrolmentres = By.xpath("ul[class='dropdown-menu show'] a[type='enrolment']");
 	private final By Sponsereddropdown1 = By.xpath("(//option[@value='Yes'][normalize-space()='Yes'])[1]");
+	
+	private final By cancelenrolment = By.xpath("(//a[@class='cancelenrolement'][normalize-space()='Cancel Enrolement'])[1]");
+	private final By cancelitbutton = By.xpath("//button[normalize-space()='Yes, cancel it!']");
+	
 	
 	
 
@@ -96,6 +102,18 @@ public class StudentEnrollmentPage extends BasePage {
 	public void ClickonCheckbox1()
 	{
 		click(checkbox1, WaitStrategy.CLICKABLE, "checkbox button");
+
+	}
+	
+	public void ClickonCheckbox3()
+	{
+		click(checkbox3, WaitStrategy.CLICKABLE, "checkbox button");
+
+	}
+	
+	public void ClickonCheckbox4()
+	{
+		click(checkbox4, WaitStrategy.CLICKABLE, "checkbox button");
 
 	}
 	

@@ -80,7 +80,7 @@ public class StudentEnrollmentPageTest extends BaseTest {
 		  se.clickonListdotsButton();
 		  se.Editrecord();
 		  se.selectSponsered();
-		  se.selectSponseredfromdropdown();
+		  se.selectSponseredfromdropdown1();
 		  //se.EnterdetailIncompanysme(data.get("Company SME"));
 		  se.selectnationality();
 		  se.selectnationalitydropdown();
@@ -90,6 +90,7 @@ public class StudentEnrollmentPageTest extends BaseTest {
 		  se.EnterdetailIndob(data.get("Date Of Birth"));
 		  se.selecteducation();
 		  se.selecteducationdropdown();
+		  bp.scroll3();
 		  se.selectdesignation();
 		  se.selectdesignationdropdown();
 		  se.selectsalary();
@@ -108,7 +109,12 @@ public class StudentEnrollmentPageTest extends BaseTest {
 		  se.EnterdetailInPaymentamount(data.get("Payment Amount"));
 		  se.selectpaymentstatus();
 		  se.selectpaymentstatusdropdown();
+		  bp.scroll3();
+		  se.ClickonMealrestrictiondropdown();
+		  se.ClickonMealrestictiontypedropdown();
 		  se.EnterdetailInMealrestrictiontype(data.get("Meal Restrictions Type"));
+		  se.ClickonCheckbox3();
+		  se.ClickonCheckbox4();
 		  se.updaterecord();
 		  String ActualTitle = lp.getTitle();
 		  Assert.assertEquals(ActualTitle, "Student Enrolment List - TMS");
