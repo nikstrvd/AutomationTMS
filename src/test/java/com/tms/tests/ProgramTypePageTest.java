@@ -29,7 +29,7 @@ public class ProgramTypePageTest extends BaseTest {
 		pt.ClickonStatus();
 		pt.ClickonSubmit();
 		String ActualTitle = lp.getTitle();
-		Assert.assertEquals(ActualTitle, "Student Enrolment List - TMS");	
+		Assert.assertEquals(ActualTitle, "Program Type - TMS");	
 		 	  
 	}
 
@@ -43,7 +43,7 @@ public class ProgramTypePageTest extends BaseTest {
 		pt.ClickonStatus();
 		pt.ClickonUpdate();
 		String ActualTitle = lp.getTitle();
-		Assert.assertEquals(ActualTitle, "Student Enrolment List - TMS");	
+		Assert.assertEquals(ActualTitle, "Program Type - TMS");	
 		 	  
 	}
 }

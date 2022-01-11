@@ -36,6 +36,21 @@ public class CourseRunPage extends BasePage {
 	private final By updateprofile = By.cssSelector(".btn.btn-primary.mar-r-10");
 	private final By cancelprofile = By.cssSelector(".btn.btn-danger");
 	
+	private final By downloadtraineelist = By.xpath("(//button[normalize-space()='Download Trainee List'])[1]");
+	private final By certificate = By.xpath("//a[normalize-space()='Certificates']");
+	
+	public void downloadtraineelist()
+	{
+		click(downloadtraineelist, WaitStrategy.CLICKABLE, "downloadtraineelist button");
+
+	}
+	
+	public void certificate()
+	{
+		click(certificate, WaitStrategy.CLICKABLE, "certificate button");
+
+	}
+	
 		
 	public void SelectAssitent()
 	{

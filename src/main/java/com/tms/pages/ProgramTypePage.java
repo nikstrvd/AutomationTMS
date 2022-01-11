@@ -8,7 +8,7 @@ public class ProgramTypePage extends BasePage {
 	
 	private final By Addprogramtype = By.xpath("(//a[normalize-space()='Add Program Type'])[1]");
 	private final By name = By.id("name");
-	private final By status = By.xpath("(//label[@class='custom-control-label'])[1]//parent::div");
+	private final By status = By.xpath("(//div[@class='custom-control custom-switch switch-success'])[1]");
 	private final By submit = By.xpath("(//button[normalize-space()='Submit'])[1]");
 	private final By cancel = By.xpath("(//a[normalize-space()='Cancel'])[1]");
 	private final By edit = By.xpath("(//i[@class='fas fa-edit text-info font-16'])[5]");

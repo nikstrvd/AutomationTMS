@@ -42,7 +42,7 @@ public class CourseRunPageTest extends BaseTest {
 		Assert.assertEquals(ActualTitle, "Courses Run View - TMS");
 		  
 	}
-	
+		
 	@Test()
 	public void ClickonStudentListfromAllCourseRunRecordTest(Map<String, String> data) {
 		   

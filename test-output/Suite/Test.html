@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Dec 22 19:15:38 IST 2021</td>
+<td>Started on:</td><td>Tue Jan 11 19:06:27 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>14 seconds (14720 ms)</td>
+<tr><td>Total time:</td><td>32 seconds (32351 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,50 +67,28 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tms.tests.ProgramTypePageTest.EditProgramType()'><b>EditProgramType</b><br>Test class: com.tms.tests.ProgramTypePageTest<br>Test method: EditProgramType in TMS Application<br>Parameters: {FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=, Remarks=, Postalcode=, Street=, confirmpassword=, Company uen=, Name2=, Threshold=, Contact Number=, Date Of Birth=, Company Contact Person=, Meal Restrictions Type=, testname=EditProgramType, execute=yes, Experience=, Student Name=, submenu=Program Type, newpassword1=, name=Edit Program Type, Block=, name1=, Building=, Description=, phonenumber=, EnterText=, Student Mobile=, Please specify meal restriction=, Company Contact Person Number=, Deadline Date=, Studnet Date Of Birth=, browser=chrome, skill=, Mobile No=, Email1=, Nric=, Domain Area of Practice=, Room=, Billing Email=, email=, Age=, Notes=, Student NRIC=, Floor=, Maxintakesize=, menuname=Course, Student Address=, Coursecode=, Company Contact Person Email=, Coursevacdesc=, Scheduleinformation=, Student Email=, Company SME=, TPGateway=, Billing Zip=, Minintakesize=, Payment Amount=, oldpassword1=, Company Name=, coursecode=, username=superadmin@mail.com, Scheduleinfo=}</td>
-<td><div><pre>java.lang.AssertionError: expected [Student Enrolment List - TMS] but found [Program Type - TMS]
-	at com.tms.tests.ProgramTypePageTest.EditProgramType(ProgramTypePageTest.java:46)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1732202937", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1732202937'><pre>java.lang.AssertionError: expected [Student Enrolment List - TMS] but found [Program Type - TMS]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.tms.tests.ProgramTypePageTest.EditProgramType(ProgramTypePageTest.java:46)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div></td>
-<td>6</td>
-<td>com.tms.tests.ProgramTypePageTest@45752059</td></tr>
+<td title='com.tms.tests.TraineeListPageTest.AccessActivityListTab()'><b>AccessActivityListTab</b><br>Test class: com.tms.tests.TraineeListPageTest<br>Test method: Verify user is able to access AccessActivityListTab<br>Parameters: {FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=, Remarks=, Postalcode=, Street=, confirmpassword=, Company uen=, Name2=, Threshold=, Contact Number=, Date Of Birth=, Company Contact Person=, Meal Restrictions Type=, testname=AccessActivityListTab, execute=yes, Experience=, Student Name=, submenu=All Courses, newpassword1=, name=, Block=, name1=, Building=, Description=, phonenumber=, EnterText=, Student Mobile=, Please specify meal restriction=, Company Contact Person Number=, Deadline Date=, Studnet Date Of Birth=, browser=chrome, skill=, Mobile No=, Email1=, Nric=, Domain Area of Practice=, Room=, Billing Email=, email=, Age=, Notes=, Student NRIC=, Floor=, Maxintakesize=, menuname=Course, Student Address=, Coursecode=, Company Contact Person Email=, Coursevacdesc=, Scheduleinformation=, Student Email=, Company SME=, TPGateway=, Billing Zip=, Minintakesize=, Payment Amount=, oldpassword1=, Company Name=, coursecode=, username=superadmin@mail.com, Scheduleinfo=}</td>
+<td></td>
+<td>12</td>
+<td>com.tms.tests.TraineeListPageTest@34e9fd99</td></tr>
+<tr>
+<td title='com.tms.tests.TraineeListPageTest.AccessTPGateWayResponseListTab()'><b>AccessTPGateWayResponseListTab</b><br>Test class: com.tms.tests.TraineeListPageTest<br>Test method: Verify user is able to access AccessTPGateWayResponseListTab<br>Parameters: {FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=, Remarks=, Postalcode=, Street=, confirmpassword=, Company uen=, Name2=, Threshold=, Contact Number=, Date Of Birth=, Company Contact Person=, Meal Restrictions Type=, testname=AccessTPGateWayResponseListTab, execute=yes, Experience=, Student Name=, submenu=All Courses, newpassword1=, name=, Block=, name1=, Building=, Description=, phonenumber=, EnterText=, Student Mobile=, Please specify meal restriction=, Company Contact Person Number=, Deadline Date=, Studnet Date Of Birth=, browser=chrome, skill=, Mobile No=, Email1=, Nric=, Domain Area of Practice=, Room=, Billing Email=, email=, Age=, Notes=, Student NRIC=, Floor=, Maxintakesize=, menuname=Course, Student Address=, Coursecode=, Company Contact Person Email=, Coursevacdesc=, Scheduleinformation=, Student Email=, Company SME=, TPGateway=, Billing Zip=, Minintakesize=, Payment Amount=, oldpassword1=, Company Name=, coursecode=, username=superadmin@mail.com, Scheduleinfo=}</td>
+<td></td>
+<td>15</td>
+<td>com.tms.tests.TraineeListPageTest@34e9fd99</td></tr>
+<tr>
+<td title='com.tms.tests.TraineeListPageTest.AccessCancelledTraineeListTab()'><b>AccessCancelledTraineeListTab</b><br>Test class: com.tms.tests.TraineeListPageTest<br>Test method: Verify user is able to access AccessCancelledTraineeListTab<br>Parameters: {FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=, Remarks=, Postalcode=, Street=, confirmpassword=, Company uen=, Name2=, Threshold=, Contact Number=, Date Of Birth=, Company Contact Person=, Meal Restrictions Type=, testname=AccessCancelledTraineeListTab, execute=yes, Experience=, Student Name=, submenu=All Courses, newpassword1=, name=, Block=, name1=, Building=, Description=, phonenumber=, EnterText=, Student Mobile=, Please specify meal restriction=, Company Contact Person Number=, Deadline Date=, Studnet Date Of Birth=, browser=chrome, skill=, Mobile No=, Email1=, Nric=, Domain Area of Practice=, Room=, Billing Email=, email=, Age=, Notes=, Student NRIC=, Floor=, Maxintakesize=, menuname=Course, Student Address=, Coursecode=, Company Contact Person Email=, Coursevacdesc=, Scheduleinformation=, Student Email=, Company SME=, TPGateway=, Billing Zip=, Minintakesize=, Payment Amount=, oldpassword1=, Company Name=, coursecode=, username=superadmin@mail.com, Scheduleinfo=}</td>
+<td></td>
+<td>16</td>
+<td>com.tms.tests.TraineeListPageTest@34e9fd99</td></tr>
 </table><p>
 </body>
 </html>

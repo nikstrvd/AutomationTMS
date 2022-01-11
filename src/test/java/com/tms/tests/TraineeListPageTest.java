@@ -40,6 +40,54 @@ public class TraineeListPageTest extends BaseTest {
 	}
 	
 	@Test()
+	public void AccessCancelledTraineeListTab(Map<String, String> data) {
+		   
+		  DashboardPage title = lp.enterUserName(data.get("username")).enterPassword(data.get("password")).clickLogin();
+		  dp.clickonSubMenu(data.get("menuname"), data.get("submenu"));		  
+		  cp.clickonListdotsButton();
+		  cp.ClickonViewCourseRunfromListDotsButton();
+		  cp.clickonListdotsButton();
+		  cp.clickonViewFromListdotsButton();
+		  cp.clickonCancelledTraineelistTab();
+		 bp.scroll2();
+		  String ActualTitle = lp.getTitle();
+		Assert.assertEquals(ActualTitle, "Courses Run View - TMS");
+		  
+	}
+	
+	@Test()
+	public void AccessTPGateWayResponseListTab(Map<String, String> data) {
+		   
+		  DashboardPage title = lp.enterUserName(data.get("username")).enterPassword(data.get("password")).clickLogin();
+		  dp.clickonSubMenu(data.get("menuname"), data.get("submenu"));		  
+		  cp.clickonListdotsButton();
+		  cp.ClickonViewCourseRunfromListDotsButton();
+		  cp.clickonListdotsButton();
+		  cp.clickonViewFromListdotsButton();
+		  cp.clickonTPGatewayResponseTab();
+		 bp.scroll2();
+		  String ActualTitle = lp.getTitle();
+		Assert.assertEquals(ActualTitle, "Courses Run View - TMS");
+		  
+	}
+	
+	@Test()
+	public void AccessActivityListTab(Map<String, String> data) {
+		   
+		  DashboardPage title = lp.enterUserName(data.get("username")).enterPassword(data.get("password")).clickLogin();
+		  dp.clickonSubMenu(data.get("menuname"), data.get("submenu"));		  
+		  cp.clickonListdotsButton();
+		  cp.ClickonViewCourseRunfromListDotsButton();
+		  cp.clickonListdotsButton();
+		  cp.clickonViewFromListdotsButton();
+		  cp.clickonActivityListTab();
+		 bp.scroll2();
+		  String ActualTitle = lp.getTitle();
+		Assert.assertEquals(ActualTitle, "Courses Run View - TMS");
+		  
+	}
+	
+	@Test()
 	public void AccessSoftBookingsTab(Map<String, String> data) {
 		   
 		  DashboardPage title = lp.enterUserName(data.get("username")).enterPassword(data.get("password")).clickLogin();
@@ -98,6 +146,38 @@ public class TraineeListPageTest extends BaseTest {
 		  cp.clickonViewFromListdotsButton();
 		  cp.clickonRefersherstab();
 		 bp.scroll2();
+		  String ActualTitle = lp.getTitle();
+		Assert.assertEquals(ActualTitle, "Courses Run View - TMS");
+		  
+	}
+	
+	@Test()
+	public void DownloadTraineeListTest(Map<String, String> data) {
+		   
+		  DashboardPage title = lp.enterUserName(data.get("username")).enterPassword(data.get("password")).clickLogin();
+		  dp.clickonSubMenu(data.get("menuname"), data.get("submenu"));		  
+		  cp.clickonListdotsButton();
+		  cp.ClickonViewCourseRunfromListDotsButton();
+		  cp.clickonListdotsButton();
+		  cp.clickonViewFromListdotsButton();
+		  cp.clickonTraineelistTab();
+		 cr.downloadtraineelist();		 
+		  String ActualTitle = lp.getTitle();
+		Assert.assertEquals(ActualTitle, "Courses Run View - TMS");
+		  
+	}
+	
+	@Test()
+	public void CertificateTest(Map<String, String> data) {
+		   
+		DashboardPage title = lp.enterUserName(data.get("username")).enterPassword(data.get("password")).clickLogin();
+		  dp.clickonSubMenu(data.get("menuname"), data.get("submenu"));		  
+		  cp.clickonListdotsButton();
+		  cp.ClickonViewCourseRunfromListDotsButton();
+		  cp.clickonListdotsButton();
+		  cp.clickonViewFromListdotsButton();
+		  cp.clickonTraineelistTab();
+		 cr.certificate();		 
 		  String ActualTitle = lp.getTitle();
 		Assert.assertEquals(ActualTitle, "Courses Run View - TMS");
 		  

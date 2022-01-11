@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-22T19:15:38 IST" name="Suite" finished-at="2021-12-22T19:15:53 IST" duration-ms="14720">
+  <suite started-at="2022-01-11T19:06:27 IST" name="Suite" finished-at="2022-01-11T19:06:59 IST" duration-ms="32351">
     <groups>
     </groups>
-    <test started-at="2021-12-22T19:15:38 IST" name="Test" finished-at="2021-12-22T19:15:53 IST" duration-ms="14720">
-      <class name="com.tms.tests.ProgramTypePageTest">
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tms.tests.ProgramTypePageTest@45752059]" started-at="2021-12-22T19:15:39 IST" name="setUp" finished-at="2021-12-22T19:15:46 IST" duration-ms="7280" status="PASS">
+    <test started-at="2022-01-11T19:06:27 IST" name="Test" finished-at="2022-01-11T19:06:59 IST" duration-ms="32351">
+      <class name="com.tms.tests.TraineeListPageTest">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tms.tests.TraineeListPageTest@34e9fd99]" started-at="2022-01-11T19:06:28 IST" name="setUp" finished-at="2022-01-11T19:06:43 IST" duration-ms="14668" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,53 +18,74 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="EditProgramType(java.util.Map)[pri:0, instance:com.tms.tests.ProgramTypePageTest@45752059]" started-at="2021-12-22T19:15:46 IST" name="EditProgramType" description="EditProgramType in TMS Application" data-provider="getData" finished-at="2021-12-22T19:15:52 IST" duration-ms="6017" status="FAIL">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tms.tests.TraineeListPageTest@34e9fd99]" started-at="2022-01-11T19:06:28 IST" name="setUp" finished-at="2022-01-11T19:06:44 IST" duration-ms="15992" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=, Remarks=, Postalcode=, Street=, confirmpassword=, Company uen=, Name2=, Threshold=, Contact Number=, Date Of Birth=, Company Contact Person=, Meal Restrictions Type=, testname=EditProgramType, execute=yes, Experience=, Student Name=, submenu=Program Type, newpassword1=, name=Edit Program Type, Block=, name1=, Building=, Description=, phonenumber=, EnterText=, Student Mobile=, Please specify meal restriction=, Company Contact Person Number=, Deadline Date=, Studnet Date Of Birth=, browser=chrome, skill=, Mobile No=, Email1=, Nric=, Domain Area of Practice=, Room=, Billing Email=, email=, Age=, Notes=, Student NRIC=, Floor=, Maxintakesize=, menuname=Course, Student Address=, Coursecode=, Company Contact Person Email=, Coursevacdesc=, Scheduleinformation=, Student Email=, Company SME=, TPGateway=, Billing Zip=, Minintakesize=, Payment Amount=, oldpassword1=, Company Name=, coursecode=, username=superadmin@mail.com, Scheduleinfo=}]]>
+                <![CDATA[[Ljava.lang.Object;@1bd81830]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Student Enrolment List - TMS] but found [Program Type - TMS]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Student Enrolment List - TMS] but found [Program Type - TMS]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at com.tms.tests.ProgramTypePageTest.EditProgramType(ProgramTypePageTest.java:46)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EditProgramType -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tms.tests.ProgramTypePageTest@45752059]" started-at="2021-12-22T19:15:53 IST" name="tearDown" finished-at="2021-12-22T19:15:53 IST" duration-ms="298" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tms.tests.TraineeListPageTest@34e9fd99]" started-at="2022-01-11T19:06:28 IST" name="setUp" finished-at="2022-01-11T19:06:43 IST" duration-ms="15115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@39ab59f8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AccessCancelledTraineeListTab(java.util.Map)[pri:0, instance:com.tms.tests.TraineeListPageTest@34e9fd99]" started-at="2022-01-11T19:06:43 IST" name="AccessCancelledTraineeListTab" description="Verify user is able to access AccessCancelledTraineeListTab" data-provider="getData" finished-at="2022-01-11T19:06:59 IST" duration-ms="16130" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=, Remarks=, Postalcode=, Street=, confirmpassword=, Company uen=, Name2=, Threshold=, Contact Number=, Date Of Birth=, Company Contact Person=, Meal Restrictions Type=, testname=AccessCancelledTraineeListTab, execute=yes, Experience=, Student Name=, submenu=All Courses, newpassword1=, name=, Block=, name1=, Building=, Description=, phonenumber=, EnterText=, Student Mobile=, Please specify meal restriction=, Company Contact Person Number=, Deadline Date=, Studnet Date Of Birth=, browser=chrome, skill=, Mobile No=, Email1=, Nric=, Domain Area of Practice=, Room=, Billing Email=, email=, Age=, Notes=, Student NRIC=, Floor=, Maxintakesize=, menuname=Course, Student Address=, Coursecode=, Company Contact Person Email=, Coursevacdesc=, Scheduleinformation=, Student Email=, Company SME=, TPGateway=, Billing Zip=, Minintakesize=, Payment Amount=, oldpassword1=, Company Name=, coursecode=, username=superadmin@mail.com, Scheduleinfo=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccessCancelledTraineeListTab -->
+        <test-method signature="AccessTPGateWayResponseListTab(java.util.Map)[pri:0, instance:com.tms.tests.TraineeListPageTest@34e9fd99]" started-at="2022-01-11T19:06:43 IST" name="AccessTPGateWayResponseListTab" description="Verify user is able to access AccessTPGateWayResponseListTab" data-provider="getData" finished-at="2022-01-11T19:06:59 IST" duration-ms="15827" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=, Remarks=, Postalcode=, Street=, confirmpassword=, Company uen=, Name2=, Threshold=, Contact Number=, Date Of Birth=, Company Contact Person=, Meal Restrictions Type=, testname=AccessTPGateWayResponseListTab, execute=yes, Experience=, Student Name=, submenu=All Courses, newpassword1=, name=, Block=, name1=, Building=, Description=, phonenumber=, EnterText=, Student Mobile=, Please specify meal restriction=, Company Contact Person Number=, Deadline Date=, Studnet Date Of Birth=, browser=chrome, skill=, Mobile No=, Email1=, Nric=, Domain Area of Practice=, Room=, Billing Email=, email=, Age=, Notes=, Student NRIC=, Floor=, Maxintakesize=, menuname=Course, Student Address=, Coursecode=, Company Contact Person Email=, Coursevacdesc=, Scheduleinformation=, Student Email=, Company SME=, TPGateway=, Billing Zip=, Minintakesize=, Payment Amount=, oldpassword1=, Company Name=, coursecode=, username=superadmin@mail.com, Scheduleinfo=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccessTPGateWayResponseListTab -->
+        <test-method signature="AccessActivityListTab(java.util.Map)[pri:0, instance:com.tms.tests.TraineeListPageTest@34e9fd99]" started-at="2022-01-11T19:06:44 IST" name="AccessActivityListTab" description="Verify user is able to access AccessActivityListTab" data-provider="getData" finished-at="2022-01-11T19:06:57 IST" duration-ms="12462" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=, Remarks=, Postalcode=, Street=, confirmpassword=, Company uen=, Name2=, Threshold=, Contact Number=, Date Of Birth=, Company Contact Person=, Meal Restrictions Type=, testname=AccessActivityListTab, execute=yes, Experience=, Student Name=, submenu=All Courses, newpassword1=, name=, Block=, name1=, Building=, Description=, phonenumber=, EnterText=, Student Mobile=, Please specify meal restriction=, Company Contact Person Number=, Deadline Date=, Studnet Date Of Birth=, browser=chrome, skill=, Mobile No=, Email1=, Nric=, Domain Area of Practice=, Room=, Billing Email=, email=, Age=, Notes=, Student NRIC=, Floor=, Maxintakesize=, menuname=Course, Student Address=, Coursecode=, Company Contact Person Email=, Coursevacdesc=, Scheduleinformation=, Student Email=, Company SME=, TPGateway=, Billing Zip=, Minintakesize=, Payment Amount=, oldpassword1=, Company Name=, coursecode=, username=superadmin@mail.com, Scheduleinfo=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccessActivityListTab -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tms.tests.TraineeListPageTest@34e9fd99]" started-at="2022-01-11T19:06:57 IST" name="tearDown" finished-at="2022-01-11T19:06:57 IST" duration-ms="413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.tms.tests.ProgramTypePageTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tms.tests.TraineeListPageTest@34e9fd99]" started-at="2022-01-11T19:06:59 IST" name="tearDown" finished-at="2022-01-11T19:06:59 IST" duration-ms="266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tms.tests.TraineeListPageTest@34e9fd99]" started-at="2022-01-11T19:06:59 IST" name="tearDown" finished-at="2022-01-11T19:06:59 IST" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tms.tests.TraineeListPageTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.tms.tests.ProgramTypePageTest" class="method navigator-link" hash-for-method="EditProgramType({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...)">EditProgramType({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.tms.tests.TraineeListPageTest" class="method navigator-link" hash-for-method="AccessActivityListTab({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...)">AccessActivityListTab({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.tms.tests.TraineeListPageTest" class="method navigator-link" hash-for-method="AccessCancelledTraineeListTab({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...)">AccessCancelledTraineeListTab({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.tms.tests.TraineeListPageTest" class="method navigator-link" hash-for-method="AccessTPGateWayResponseListTab({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...)">AccessTPGateWayResponseListTab({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,34 +129,44 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.tms.tests.ProgramTypePageTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.tms.tests.TraineeListPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="EditProgramType({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...)">
-                  </a> <!-- EditProgramType({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...) -->
-                  <span class="method-name">EditProgramType</span>
-                  <span class="parameters">({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=, Remarks=, Postalcode=, Street=, confirmpassword=, Company uen=, Name2=, Threshold=, Contact Number=, Date Of Birth=, Company Contact Person=, Meal Restrictions Type=, testname=EditProgramType, execute=yes, Experience=, Student Name=, submenu=Program Type, newpassword1=, name=Edit Program Type, Block=, name1=, Building=, Description=, phonenumber=, EnterText=, Student Mobile=, Please specify meal restriction=, Company Contact Person Number=, Deadline Date=, Studnet Date Of Birth=, browser=chrome, skill=, Mobile No=, Email1=, Nric=, Domain Area of Practice=, Room=, Billing Email=, email=, Age=, Notes=, Student NRIC=, Floor=, Maxintakesize=, menuname=Course, Student Address=, Coursecode=, Company Contact Person Email=, Coursevacdesc=, Scheduleinformation=, Student Email=, Company SME=, TPGateway=, Billing Zip=, Minintakesize=, Payment Amount=, oldpassword1=, Company Name=, coursecode=, username=superadmin@mail.com, Scheduleinfo=})</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Student Enrolment List - TMS] but found [Program Type - TMS]
-	at com.tms.tests.ProgramTypePageTest.EditProgramType(ProgramTypePageTest.java:46)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 15 stack frames
-</div> <!-- stack-trace -->
+                  <a name="AccessActivityListTab({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...)">
+                  </a> <!-- AccessActivityListTab({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...) -->
+                  <span class="method-name">AccessActivityListTab</span>
+                  <span class="parameters">({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=, Remarks=, Postalcode=, Street=, confirmpassword=, Company uen=, Name2=, Threshold=, Contact Number=, Date Of Birth=, Company Contact Person=, Meal Restrictions Type=, testname=AccessActivityListTab, execute=yes, Experience=, Student Name=, submenu=All Courses, newpassword1=, name=, Block=, name1=, Building=, Description=, phonenumber=, EnterText=, Student Mobile=, Please specify meal restriction=, Company Contact Person Number=, Deadline Date=, Studnet Date Of Birth=, browser=chrome, skill=, Mobile No=, Email1=, Nric=, Domain Area of Practice=, Room=, Billing Email=, email=, Age=, Notes=, Student NRIC=, Floor=, Maxintakesize=, menuname=Course, Student Address=, Coursecode=, Company Contact Person Email=, Coursevacdesc=, Scheduleinformation=, Student Email=, Company SME=, TPGateway=, Billing Zip=, Minintakesize=, Payment Amount=, oldpassword1=, Company Name=, coursecode=, username=superadmin@mail.com, Scheduleinfo=})</span>
                   <em>
-(EditProgramType in TMS Application)                  </em>
+(Verify user is able to access AccessActivityListTab)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AccessCancelledTraineeListTab({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...)">
+                  </a> <!-- AccessCancelledTraineeListTab({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...) -->
+                  <span class="method-name">AccessCancelledTraineeListTab</span>
+                  <span class="parameters">({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=, Remarks=, Postalcode=, Street=, confirmpassword=, Company uen=, Name2=, Threshold=, Contact Number=, Date Of Birth=, Company Contact Person=, Meal Restrictions Type=, testname=AccessCancelledTraineeListTab, execute=yes, Experience=, Student Name=, submenu=All Courses, newpassword1=, name=, Block=, name1=, Building=, Description=, phonenumber=, EnterText=, Student Mobile=, Please specify meal restriction=, Company Contact Person Number=, Deadline Date=, Studnet Date Of Birth=, browser=chrome, skill=, Mobile No=, Email1=, Nric=, Domain Area of Practice=, Room=, Billing Email=, email=, Age=, Notes=, Student NRIC=, Floor=, Maxintakesize=, menuname=Course, Student Address=, Coursecode=, Company Contact Person Email=, Coursevacdesc=, Scheduleinformation=, Student Email=, Company SME=, TPGateway=, Billing Zip=, Minintakesize=, Payment Amount=, oldpassword1=, Company Name=, coursecode=, username=superadmin@mail.com, Scheduleinfo=})</span>
+                  <em>
+(Verify user is able to access AccessCancelledTraineeListTab)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AccessTPGateWayResponseListTab({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...)">
+                  </a> <!-- AccessTPGateWayResponseListTab({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...) -->
+                  <span class="method-name">AccessTPGateWayResponseListTab</span>
+                  <span class="parameters">({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Billing Address=, Remarks=, Postalcode=, Street=, confirmpassword=, Company uen=, Name2=, Threshold=, Contact Number=, Date Of Birth=, Company Contact Person=, Meal Restrictions Type=, testname=AccessTPGateWayResponseListTab, execute=yes, Experience=, Student Name=, submenu=All Courses, newpassword1=, name=, Block=, name1=, Building=, Description=, phonenumber=, EnterText=, Student Mobile=, Please specify meal restriction=, Company Contact Person Number=, Deadline Date=, Studnet Date Of Birth=, browser=chrome, skill=, Mobile No=, Email1=, Nric=, Domain Area of Practice=, Room=, Billing Email=, email=, Age=, Notes=, Student NRIC=, Floor=, Maxintakesize=, menuname=Course, Student Address=, Coursecode=, Company Contact Person Email=, Coursevacdesc=, Scheduleinformation=, Student Email=, Company SME=, TPGateway=, Billing Zip=, Minintakesize=, Payment Amount=, oldpassword1=, Company Name=, coursecode=, username=superadmin@mail.com, Scheduleinfo=})</span>
+                  <em>
+(Verify user is able to access AccessTPGateWayResponseListTab)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -218,16 +238,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'EditProgramType')
-data.setCell(0, 2, 'com.tms.tests.ProgramTypePageTest')
-data.setCell(0, 3, 6017);
+data.setCell(0, 1, 'AccessCancelledTraineeListTab')
+data.setCell(0, 2, 'com.tms.tests.TraineeListPageTest')
+data.setCell(0, 3, 16130);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'AccessTPGateWayResponseListTab')
+data.setCell(1, 2, 'com.tms.tests.TraineeListPageTest')
+data.setCell(1, 3, 15827);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'AccessActivityListTab')
+data.setCell(2, 2, 'com.tms.tests.TraineeListPageTest')
+data.setCell(2, 3, 12462);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 44 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -253,20 +281,42 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.tms.tests.ProgramTypePageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.tms.tests.TraineeListPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp([{FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, B...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp([{FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, B...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp([{FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, B...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">EditProgramType({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...)</span>
-                <span class="method-start">7282 ms</span>
+                <span class="method-name">AccessCancelledTraineeListTab({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...)</span>
+                <span class="method-start">14669 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AccessTPGateWayResponseListTab({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...)</span>
+                <span class="method-start">15115 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AccessActivityListTab({FeesPaid=, Email=, Unit=, Scheduleinfodesc=, linkedIn URL=, reference=, Name3=, password=123456, Bi...)</span>
+                <span class="method-start">15992 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13616 ms</span>
+                <span class="method-start">28459 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">30802 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">30944 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

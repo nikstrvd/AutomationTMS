@@ -61,10 +61,13 @@ public class CoursePage extends BasePage {
 	private final By Editrecord1 = By.xpath("//ul[@class='dropdown-menu show']//a[contains(text(),'Edit')]");	
 	
 	private final By Traineelist = By.xpath("//button[@id='nav-trainee-tab']");
+	private final By CancelledTraineelist = By.id("nav-trainee-cancelled-tab");
 	private final By Softbookingstab = By.xpath("//button[@id='nav-soft-booking-tab']");
 	private final By Waitinglisttab = By.xpath("//button[@id='nav-waiting-list-tab']");
 	private final By Paymentlisttab = By.xpath("//button[@id='nav-payments-list-tab']");
 	private final By Refersherstab = By.xpath("//button[@id='nav-refresher-tab']");
+	private final By TPGatewayResponse = By.id("nav-response-list-tab");
+	private final By ActivityList = By.id("nav-activity-list-tab");
 	private final By View1 = By.xpath("//div[@class='dropdown dot-list show']//li[1]");
 	private final By edit1 = By.xpath("//ul[@class='dropdown-menu show']//a[contains(text(),'Edit')]");
 	private final By viewpayments = By.xpath("//ul[@class='dropdown-menu show']//a[@class='viewpayment'][normalize-space()='View Payments']");
@@ -86,6 +89,21 @@ public class CoursePage extends BasePage {
 	public void clickonTraineelistTab()
 	{
 		click(Traineelist, WaitStrategy.CLICKABLE, "Traineelist Tab");
+	}
+	
+	public void clickonCancelledTraineelistTab()
+	{
+		click(CancelledTraineelist, WaitStrategy.CLICKABLE, "CancelledTraineelist Tab");
+	}
+	
+	public void clickonTPGatewayResponseTab()
+	{
+		click(TPGatewayResponse, WaitStrategy.CLICKABLE, "TPGatewayResponse Tab");
+	}
+	
+	public void clickonActivityListTab()
+	{
+		click(ActivityList, WaitStrategy.CLICKABLE, "ActivityList Tab");
 	}
 	
 	public void clickonSoftbookingstab()
