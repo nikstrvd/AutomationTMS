@@ -24,6 +24,7 @@
 			<class name="com.tms.tests.TraineeListPageTest"/>
 			<class name="com.tms.tests.StudentPageTest"/>
 			<class name="com.tms.tests.ProgramTypePageTest"/>
+			<class name="com.tms.tests.DataImportPageTest"/>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->	

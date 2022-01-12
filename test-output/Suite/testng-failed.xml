@@ -8,13 +8,15 @@
   </listeners>
   <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="com.tms.tests.TraineeListPageTest">
+      <class name="com.tms.tests.DataImportPageTest">
         <methods>
+          <include name="AccessDataImportSyncStudentEnrolmentTPG" invocation-numbers="0"/>
+          <include name="AccessDataImportStudentEnrollment" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="DownloadTraineeListTest" invocation-numbers="0"/>
+          <include name="AccessDataImportCourseRuns" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.tms.tests.TraineeListPageTest -->
+      </class> <!-- com.tms.tests.DataImportPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
